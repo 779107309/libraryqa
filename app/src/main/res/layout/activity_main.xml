@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.arcfacedemo.widget.CameraSurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <com.example.arcfacedemo.widget.CameraGLSurfaceView
+                android:id="@+id/glsurfaceView"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/pingbao2"
+                />
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/glsurfaceView"
+                android:layout_marginTop="5dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_sex"
+                android:layout_marginBottom="5dp"
+                android:text="" />
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
